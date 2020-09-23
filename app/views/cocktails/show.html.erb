@@ -31,7 +31,8 @@
       <%= render "doses/new", cocktail: @cocktail, dose: @dose %>
     </div>
   </div>
- <h3>Reviews</h3>
+
+  <h3>Reviews</h3>
   <% if @cocktail.reviews.empty? %>
     <p>Be the first to let a review</p>
   <% else %>
@@ -52,4 +53,5 @@
   <% end %>
 
   <%= render "reviews/new", cocktail: @cocktail, review: @review %>
+
 </div>
