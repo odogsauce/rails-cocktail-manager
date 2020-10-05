@@ -17,7 +17,6 @@
             <tr>
               <td><%= dose.ingredient.name %></td>
               <td><%= dose.description %></td>
-              <td>
                 <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?" } do %>
                   <i class="fa fa-trash destroy_dose"></i>
                 <% end %>
@@ -57,7 +56,5 @@
 </div>
 
 <div>
-  <%= link_to cocktails_path, method: :delete, data: { confirm: "Are you sure?" } do %>
-      <i class="fa fa-trash destroy_dose"></i>
-    <% end %>
+   <%= link_to "Don't like it 🗑️", cocktail_path(@cocktail), method: :delete , class:'btn btn-primary dropdown-item'%>
 </div>
