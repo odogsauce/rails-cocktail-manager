@@ -55,3 +55,9 @@
   <%= render "reviews/new", cocktail: @cocktail, review: @review %>
 
 </div>
+
+<div>
+  <%= link_to cocktails_path, method: :delete, data: { confirm: "Are you sure?" } do %>
+      <i class="fa fa-trash destroy_dose"></i>
+    <% end %>
+</div>
