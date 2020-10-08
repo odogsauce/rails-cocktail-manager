@@ -1,5 +1,6 @@
 require 'json'
 require 'open-uri'
+require 'nokogiri'
 
 puts "Destroy ingredients"
 Ingredient.destroy_all if Rails.env.development?

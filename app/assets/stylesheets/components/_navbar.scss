@@ -2,13 +2,36 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.5);
-
 }
+
+
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
+  display: flex;
 }
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-lewagon  h1 {
+
+  position: relative;
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, left top, right top, from(#ef5261), color-stop(#ef5261), to(#000));
+  background: linear-gradient(90deg, #ef5261, #ef5261, #000);
+      background-repeat: repeat;
+      background-size: auto;
+      background-clip: border-box;
+  background-size: 80%;
+  -webkit-animation: animate 8s linear infinite;
+  animation: animate 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(250,203,197,0);
+  text-align: center;
 }
